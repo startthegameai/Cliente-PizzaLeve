@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Baliano\\\\Downloads\\\\Clientes\\\\Pizzria - Piza leve - Buzios\\\\assets\\\\css\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Baliano\\\\Downloads\\\\Clientes\\\\Pizzria - Piza leve - Buzios\\\\assets\\\\js\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Baliano\\\\Downloads\\\\Clientes\\\\Pizzria - Piza leve - Buzios\\\\assets\\\\images\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Baliano\\\\Downloads\\\\Clientes\\\\Pizzria - Piza leve - Buzios\\\\blog\")",
+      "Bash(Write-Host \"Diretórios criados.\")",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Baliano\\\\Downloads\\\\Clientes\\\\Pizzria - Piza leve - Buzios\" -Recurse | Where-Object { -not $_.PSIsContainer } | Select-Object FullName)",
+      "PowerShell(Test-Path *)"
+    ]
+  }
+}
